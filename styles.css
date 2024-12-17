@@ -7,15 +7,29 @@ body {
 }
 
 h1 {
-    color:#2C2C2C;  /* Green color for headings */
-}
-h2 {
-    color: #3A4F63
+    color:#2C2C2C; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
 }
 
-h3{
-    color: #35605A
+h2 {
+    color: #3A4F63;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
 }
+
+h3 {
+    color: #35605A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+    
+
 
 p {
     line-height: 1.6;
