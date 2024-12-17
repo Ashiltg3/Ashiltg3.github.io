@@ -6,8 +6,15 @@ body {
     padding: 0;
 }
 
-h1, h2, h3 {
-    color: #4CAF50;  /* Green color for headings */
+h1 {
+    color: #333333;  /* Green color for headings */
+}
+h2 {
+    color: #3A4F63
+}
+
+h3{
+    color: #35605A
 }
 
 p {
