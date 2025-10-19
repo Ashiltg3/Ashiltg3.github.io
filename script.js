@@ -8,7 +8,7 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 
-/* ---------------- Starfield ---------------- */
+/* ---------------- Starfield with Twinkle ---------------- */
 const starsCanvas = document.createElement('canvas');
 starsCanvas.id = 'stars';
 document.body.appendChild(starsCanvas);
@@ -26,21 +26,29 @@ function initStars() {
       x: Math.random() * starsCanvas.width,
       y: Math.random() * starsCanvas.height,
       radius: Math.random() * 1.5 + 0.5,
-      speed: Math.random() * 0.3 + 0.05
+      speed: Math.random() * 0.3 + 0.05,
+      twinkle: Math.random() * 0.05 + 0.02, // twinkle speed
+      opacity: Math.random()
     });
   }
 }
 
 function animateStars() {
   ctx.clearRect(0, 0, starsCanvas.width, starsCanvas.height);
-  ctx.fillStyle = '#ffffff';
   starsArray.forEach(star => {
+    // Draw star with current opacity
     ctx.beginPath();
     ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,255,255,${star.opacity})`;
     ctx.fill();
+
     // Move star down
     star.y += star.speed;
     if (star.y > starsCanvas.height) star.y = 0;
+
+    // Twinkle effect
+    star.opacity += star.twinkle;
+    if (star.opacity > 1 || star.opacity < 0) star.twinkle *= -1;
   });
   requestAnimationFrame(animateStars);
 }
@@ -50,6 +58,8 @@ window.addEventListener('resize', initStars);
 // Initialize
 initStars();
 animateStars();
+
+
 
 /* ---------------- Scroll Reveal ---------------- */
 const sections = document.querySelectorAll('section');
