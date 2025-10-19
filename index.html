@@ -1,107 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashil's Portfolio</title>
-    <meta name="description" content="Ashil's portfolio showcasing projects and skills in game programming.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashil | Game Programmer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Navigation -->
+  <header id="header">
+    <h1>Ashil</h1>
+    <p class="tagline">Aspiring Game Programmer • Creator • Learner</p>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Header -->
-    <header>
-        <h1>Hi, I'm Ashil!</h1>
-        <p>Aspiring Game Programmer | Passionate about coding and game design</p>
-    </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Ashil — a 14-year-old aspiring game programmer passionate about creating fun, story-driven games and learning how games work under the hood.</p>
+  </section>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a 14-year-old aspiring game programmer. I enjoy creating games, learning new programming languages, and building projects that challenge me.</p>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>C# (Unity)</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript (learning)</li>
+    </ul>
+  </section>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill">Python</div>
-            <div class="skill">C#</div>
-            <div class="skill">Unity</div>
-            <div class="skill">Git & GitHub</div>
-        </div>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Calculator</h3>
+        <p>A simple calculator built in C# that performs basic arithmetic operations.</p>
+        <a href="https://github.com/Ashiltg3/calculator.git" target="_blank">View Project</a>
+      </div>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>Calculator</h3>
-                <p>A simple calculator performing basic arithmetic operations in C#.</p>
-                <a href="https://github.com/Ashiltg3/calculator.git/" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Number Guesser</h3>
-                <p>A number guessing game built in C# with random number generation.</p>
-                <a href="https://github.com/Ashiltg3/numberguesser.git" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Temp Converter</h3>
-                <p>Convert between Celsius, Fahrenheit, and Kelvin in C#.</p>
-                <a href="https://github.com/Ashiltg3/TempConverter.git" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Quiz Game</h3>
-                <p>A small quiz game with 10 questions and score tracking in C#.</p>
-                <a href="https://github.com/Ashiltg3/Quiz-Game.git" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Rock, Paper, Scissors</h3>
-                <p>Play multiple rounds and track your score in C#.</p>
-                <a href="https://github.com/Ashiltg3/Rock-Paper-Scissors.git" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Task Manager</h3>
-                <p>Add, view, and remove tasks in C# (one-time use program).</p>
-                <a href="https://github.com/Ashiltg3/TaskManager.git" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Bank Account Simulator</h3>
-                <p>Simulate basic bank account operations in C#.</p>
-                <a href="https://github.com/Ashiltg3/BankAccountSim.git" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Mini Combat Game</h3>
-                <p>Text-based combat system in C# showcasing battle mechanics.</p>
-                <a href="https://github.com/Ashiltg3/Mini-Combat-Game.git" target="_blank">View Project</a>
-            </div>
-        </div>
-    </section>
+      <div class="project-card">
+        <h3>Number Guesser</h3>
+        <p>Guess the number the program is thinking of. Built in C#.</p>
+        <a href="https://github.com/Ashiltg3/numberguesser.git" target="_blank">View Project</a>
+      </div>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you want to get in touch, email me at:</p>
-        <p><a href="mailto:ashil@example.com">ashil@example.com</a></p>
-    </section>
+      <div class="project-card">
+        <h3>Mini Combat Game</h3>
+        <p>A text-based combat system showing basic player-vs-enemy logic.</p>
+        <a href="https://github.com/Ashiltg3/Mini-Combat-Game.git" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Ashil. All rights reserved.</p>
-    </footer>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Wanna collaborate or say hi? Reach out here:</p>
+    <a href="mailto:ashil@example.com" class="email-link">ashil@example.com</a>
+  </section>
 
-    <script src="script.js"></script>
-    <button id="backToTop">↑ Top</button>
-
+  <footer>
+    <p>© 2025 Ashil. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
