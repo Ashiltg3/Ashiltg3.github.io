@@ -59,6 +59,14 @@ window.addEventListener('resize', initStars);
 initStars();
 animateStars();
 
+/* ---------------- Star Parallax ---------------- */
+window.addEventListener('scroll', () => {
+  // move the stars slightly slower than scroll
+  const scrollY = window.scrollY;
+  starsCanvas.style.transform = `translateY(${scrollY * 0.3}px)`;
+});
+
+
 
 
 /* ---------------- Scroll Reveal ---------------- */
