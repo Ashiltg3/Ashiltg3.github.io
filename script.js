@@ -26,7 +26,7 @@ window.addEventListener('load', reveal);
 const backToTop = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 100) {
         backToTop.style.display = 'block';
         backToTop.style.opacity = '1';
     } else {
