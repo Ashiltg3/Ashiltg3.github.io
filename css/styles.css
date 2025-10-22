@@ -248,3 +248,11 @@ footer {
     transform: translateY(0);
   }
 }
+
+.new-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
