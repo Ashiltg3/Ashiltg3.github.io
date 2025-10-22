@@ -128,22 +128,6 @@ section h2 {
     box-shadow: 0 0 12px #00ffcc;
     transform: translateY(-3px);
 }
-.new-page-link a{
-    display: inline-block;
-    padding: 8px 15px;
-    color: #000;
-    background-color: #00ffcc;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-.new-page-link a:hover{
-    background-color: #00e6b8;
-    box-shadow: 0 0 12px #00ffcc;
-    transform: translateY(-3px);
-    
-}
 
 /* ---------------- Contact ---------------- */
 #contact {
