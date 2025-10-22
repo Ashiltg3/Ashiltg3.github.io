@@ -150,6 +150,33 @@ section h2 {
     transform: translateY(-3px);
 }
 
+.new-page {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00ffcc33;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s;
+    backdrop-filter: blur(5px);
+}
+.new-page a{
+    display: inline-block;
+    padding: 8px 15px;
+    color: #000;
+    background-color: #00ffcc;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.new-page a:hover{
+    background-color: #00e6b8;
+    box-shadow: 0 0 12px #00ffcc;
+    transform: translateY(-3px);
+    
+}
+
+
 /* ---------------- Contact ---------------- */
 #contact {
     text-align: center;
