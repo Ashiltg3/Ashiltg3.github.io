@@ -160,6 +160,10 @@ section h2 {
     justify-content: center;
     transition: all 0.3s;
     backdrop-filter: blur(5px);
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+
 }
 
 
@@ -249,10 +253,5 @@ footer {
   }
 }
 
-.new-page {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
+
 
